@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>amMap example</title>
+
+        <link rel="stylesheet" href="ammap/ammap.css" type="text/css">
+        <script
+          src="http://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous">
+        </script>
+        <script src="us-cities.json" type="text/javascript"></script>
+        <script src="ammap/ammap.js" type="text/javascript"></script>
+        <!-- map file should be included after ammap.js -->
+		<script src="ammap/maps/js/usCounties.js" type="text/javascript"></script>
+        <script src="heatmap.js" type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <select id="industiesSelect" >
+            <option value="">- Select an Industry - </option>
+        </select>
+        <select id="statesSelect">
+            <option value="">- Select a State - </option>
+        </select>
+        <select id="citiesSelect" onchange="citySelected()">
+            <option value="">- Select a City - </option>
+        </select>
+        <div id="mapdiv" style="width: 100%; background-color:#EEEEEE; height: 500px;"></div>
+    </body>
+
+</html>

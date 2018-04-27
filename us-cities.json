@@ -1,0 +1,1663 @@
+cities = [
+  {
+    "city": "Birmingham",
+    "city_ascii": "Birmingham",
+    "state_id": "AL",
+    "state_name": "Alabama",
+    "county_fips": 1073,
+    "county_name": "Jefferson",
+    "lat": 33.5276,
+    "lng": -86.7986
+  },
+  {
+    "city": "Mobile",
+    "city_ascii": "Mobile",
+    "state_id": "AL",
+    "state_name": "Alabama",
+    "county_fips": 1097,
+    "county_name": "Mobile",
+    "lat": 30.6782,
+    "lng": -88.1161
+  },
+  {
+    "city": "Huntsville",
+    "city_ascii": "Huntsville",
+    "state_id": "AL",
+    "state_name": "Alabama",
+    "county_fips": 1089,
+    "county_name": "Madison",
+    "lat": 34.699,
+    "lng": -86.6412
+  },
+  {
+    "city": "Anchorage",
+    "city_ascii": "Anchorage",
+    "state_id": "AK",
+    "state_name": "Alaska",
+    "county_fips": 2020,
+    "county_name": "Anchorage",
+    "lat": 61.1508,
+    "lng": -149.1091
+  },
+  {
+    "city": "Fairbanks",
+    "city_ascii": "Fairbanks",
+    "state_id": "AK",
+    "state_name": "Alaska",
+    "county_fips": 2090,
+    "county_name": "Fairbanks North Star",
+    "lat": 64.8353,
+    "lng": -147.6533
+  },
+  {
+    "city": "Juneau",
+    "city_ascii": "Juneau",
+    "state_id": "AK",
+    "state_name": "Alaska",
+    "county_fips": 2110,
+    "county_name": "Juneau",
+    "lat": 58.4566,
+    "lng": -134.1776
+  },
+  {
+    "city": "Phoenix",
+    "city_ascii": "Phoenix",
+    "state_id": "AZ",
+    "state_name": "Arizona",
+    "county_fips": 4013,
+    "county_name": "Maricopa",
+    "lat": 33.5722,
+    "lng": -112.0891
+  },
+  {
+    "city": "Tucson",
+    "city_ascii": "Tucson",
+    "state_id": "AZ",
+    "state_name": "Arizona",
+    "county_fips": 4019,
+    "county_name": "Pima",
+    "lat": 32.1558,
+    "lng": -110.8777
+  },
+  {
+    "city": "Mesa",
+    "city_ascii": "Mesa",
+    "state_id": "AZ",
+    "state_name": "Arizona",
+    "county_fips": 4013,
+    "county_name": "Maricopa",
+    "lat": 33.4016,
+    "lng": -111.718
+  },
+
+  {
+    "city": "Scottsdale",
+    "city_ascii": "Scottsdale",
+    "state_id": "AZ",
+    "state_name": "Arizona",
+    "county_fips": 4013,
+    "county_name": "Maricopa",
+    "lat": 33.6872,
+    "lng": -111.865
+  },
+  {
+    "city": "Little Rock",
+    "city_ascii": "Little Rock",
+    "state_id": "AR",
+    "state_name": "Arkansas",
+    "county_fips": 5119,
+    "county_name": "Pulaski",
+    "lat": 34.7255,
+    "lng": -92.3584
+  },
+  {
+    "city": "Fayetteville",
+    "city_ascii": "Fayetteville",
+    "state_id": "AR",
+    "state_name": "Arkansas",
+    "county_fips": 5143,
+    "county_name": "Washington",
+    "lat": 36.0713,
+    "lng": -94.166
+  },
+  {
+    "city": "Los Angeles",
+    "city_ascii": "Los Angeles",
+    "state_id": "CA",
+    "state_name": "California",
+    "county_fips": 6037,
+    "county_name": "Los Angeles",
+    "lat": 34.114,
+    "lng": -118.4068
+  },
+  {
+    "city": "San Francisco",
+    "city_ascii": "San Francisco",
+    "state_id": "CA",
+    "state_name": "California",
+    "county_fips": 6075,
+    "county_name": "San Francisco",
+    "lat": 37.7561,
+    "lng": -122.4429
+  },
+  {
+    "city": "San Diego",
+    "city_ascii": "San Diego",
+    "state_id": "CA",
+    "state_name": "California",
+    "county_fips": 6073,
+    "county_name": "San Diego",
+    "lat": 32.8312,
+    "lng": -117.1225
+  },
+  {
+    "city": "Riverside",
+    "city_ascii": "Riverside",
+    "state_id": "CA",
+    "state_name": "California",
+    "county_fips": 6065,
+    "county_name": "Riverside",
+    "lat": 33.9382,
+    "lng": -117.3949
+  },
+  {
+    "city": "Sacramento",
+    "city_ascii": "Sacramento",
+    "state_id": "CA",
+    "state_name": "California",
+    "county_fips": 6067,
+    "county_name": "Sacramento",
+    "lat": 38.5666,
+    "lng": -121.4683
+  },
+  {
+    "city": "San Jose",
+    "city_ascii": "San Jose",
+    "state_id": "CA",
+    "state_name": "California",
+    "county_fips": 6085,
+    "county_name": "Santa Clara",
+    "lat": 37.302,
+    "lng": -121.8488
+  },
+  {
+    "city": "Denver",
+    "city_ascii": "Denver",
+    "state_id": "CO",
+    "state_name": "Colorado",
+    "county_fips": 8031,
+    "county_name": "Denver",
+    "lat": 39.7621,
+    "lng": -104.8759
+  },
+  {
+    "city": "Colorado Springs",
+    "city_ascii": "Colorado Springs",
+    "state_id": "CO",
+    "state_name": "Colorado",
+    "county_fips": 8041,
+    "county_name": "El Paso",
+    "lat": 38.8673,
+    "lng": -104.7605
+  },
+  {
+    "city": "Aurora",
+    "city_ascii": "Aurora",
+    "state_id": "CO",
+    "state_name": "Colorado",
+    "county_fips": 8001,
+    "county_name": "Adams",
+    "lat": 39.7085,
+    "lng": -104.7274
+  },
+  {
+    "city": "Fort Collins",
+    "city_ascii": "Fort Collins",
+    "state_id": "CO",
+    "state_name": "Colorado",
+    "county_fips": 8069,
+    "county_name": "Larimer",
+    "lat": 40.5487,
+    "lng": -105.0656
+  },
+  {
+    "city": "Bridgeport",
+    "city_ascii": "Bridgeport",
+    "state_id": "CT",
+    "state_name": "Connecticut",
+    "county_fips": 9001,
+    "county_name": "Fairfield",
+    "lat": 41.1909,
+    "lng": -73.1958
+  },
+  {
+    "city": "Hartford",
+    "city_ascii": "Hartford",
+    "state_id": "CT",
+    "state_name": "Connecticut",
+    "county_fips": 9003,
+    "county_name": "Hartford",
+    "lat": 41.7661,
+    "lng": -72.6834
+  },
+  {
+    "city": "New Haven",
+    "city_ascii": "New Haven",
+    "state_id": "CT",
+    "state_name": "Connecticut",
+    "county_fips": 9009,
+    "county_name": "New Haven",
+    "lat": 41.3112,
+    "lng": -72.9245
+  },
+  {
+    "city": "Dover",
+    "city_ascii": "Dover",
+    "state_id": "DE",
+    "state_name": "Delaware",
+    "county_fips": 10001,
+    "county_name": "Kent",
+    "lat": 39.16,
+    "lng": -75.5204
+  },
+  {
+    "city": "Washington",
+    "city_ascii": "Washington",
+    "state_id": "DC",
+    "state_name": "District of Columbia",
+    "county_fips": 11001,
+    "county_name": "District of Columbia",
+    "lat": 38.9047,
+    "lng": -77.0163
+  },
+  {
+    "city": "Miami",
+    "city_ascii": "Miami",
+    "state_id": "FL",
+    "state_name": "Florida",
+    "county_fips": 12086,
+    "county_name": "Miami-Dade",
+    "lat": 25.784,
+    "lng": -80.2102
+  },
+  {
+    "city": "Tampa",
+    "city_ascii": "Tampa",
+    "state_id": "FL",
+    "state_name": "Florida",
+    "county_fips": 12057,
+    "county_name": "Hillsborough",
+    "lat": 27.9937,
+    "lng": -82.4454
+  },
+  {
+    "city": "Orlando",
+    "city_ascii": "Orlando",
+    "state_id": "FL",
+    "state_name": "Florida",
+    "county_fips": 12095,
+    "county_name": "Orange",
+    "lat": 28.4801,
+    "lng": -81.3448
+  },
+  {
+    "city": "Jacksonville",
+    "city_ascii": "Jacksonville",
+    "state_id": "FL",
+    "state_name": "Florida",
+    "county_fips": 12031,
+    "county_name": "Duval",
+    "lat": 30.3322,
+    "lng": -81.6749
+  },
+  {
+    "city": "Atlanta",
+    "city_ascii": "Atlanta",
+    "state_id": "GA",
+    "state_name": "Georgia",
+    "county_fips": 13121,
+    "county_name": "Fulton",
+    "lat": 33.7627,
+    "lng": -84.4231
+  },
+  {
+    "city": "Augusta",
+    "city_ascii": "Augusta",
+    "state_id": "GA",
+    "state_name": "Georgia",
+    "county_fips": 13245,
+    "county_name": "Richmond",
+    "lat": 33.3644,
+    "lng": -82.0708
+  },
+  {
+    "city": "Savannah",
+    "city_ascii": "Savannah",
+    "state_id": "GA",
+    "state_name": "Georgia",
+    "county_fips": 13051,
+    "county_name": "Chatham",
+    "lat": 32.0282,
+    "lng": -81.1784
+  },
+  {
+    "city": "Columbus",
+    "city_ascii": "Columbus",
+    "state_id": "GA",
+    "state_name": "Georgia",
+    "county_fips": 13215,
+    "county_name": "Muscogee",
+    "lat": 32.51,
+    "lng": -84.8771
+  },
+  {
+    "city": "Nampa",
+    "city_ascii": "Nampa",
+    "state_id": "ID",
+    "state_name": "Idaho",
+    "county_fips": 16027,
+    "county_name": "Canyon",
+    "lat": 43.5833,
+    "lng": -116.5641
+  },
+  {
+    "city": "Coeur d'Alene",
+    "city_ascii": "Coeur d'Alene",
+    "state_id": "ID",
+    "state_name": "Idaho",
+    "county_fips": 16055,
+    "county_name": "Kootenai",
+    "lat": 47.7041,
+    "lng": -116.7928
+  },
+  {
+    "city": "Chicago",
+    "city_ascii": "Chicago",
+    "state_id": "IL",
+    "state_name": "Illinois",
+    "county_fips": 17031,
+    "county_name": "Cook",
+    "lat": 41.8373,
+    "lng": -87.6861
+  },
+  {
+    "city": "Rockford",
+    "city_ascii": "Rockford",
+    "state_id": "IL",
+    "state_name": "Illinois",
+    "county_fips": 17201,
+    "county_name": "Winnebago",
+    "lat": 42.2594,
+    "lng": -89.0646
+  },
+  {
+    "city": "Round Lake Beach",
+    "city_ascii": "Round Lake Beach",
+    "state_id": "IL",
+    "state_name": "Illinois",
+    "county_fips": 17097,
+    "county_name": "Lake",
+    "lat": 42.379,
+    "lng": -88.0811
+  },
+  {
+    "city": "Peoria",
+    "city_ascii": "Peoria",
+    "state_id": "IL",
+    "state_name": "Illinois",
+    "county_fips": 17143,
+    "county_name": "Peoria",
+    "lat": 40.7518,
+    "lng": -89.6153
+  },
+  {
+    "city": "Aurora",
+    "city_ascii": "Aurora",
+    "state_id": "IL",
+    "state_name": "Illinois",
+    "county_fips": 17089,
+    "county_name": "Kane",
+    "lat": 41.7638,
+    "lng": -88.2901
+  },
+  {
+    "city": "Springfield",
+    "city_ascii": "Springfield",
+    "state_id": "IL",
+    "state_name": "Illinois",
+    "county_fips": 17167,
+    "county_name": "Sangamon",
+    "lat": 39.7713,
+    "lng": -89.6538
+  },
+  {
+    "city": "Indianapolis",
+    "city_ascii": "Indianapolis",
+    "state_id": "IN",
+    "state_name": "Indiana",
+    "county_fips": 18097,
+    "county_name": "Marion",
+    "lat": 39.7771,
+    "lng": -86.1458
+  },
+  {
+    "city": "Fort Wayne",
+    "city_ascii": "Fort Wayne",
+    "state_id": "IN",
+    "state_name": "Indiana",
+    "county_fips": 18003,
+    "county_name": "Allen",
+    "lat": 41.0885,
+    "lng": -85.1436
+  },
+  {
+    "city": "South Bend",
+    "city_ascii": "South Bend",
+    "state_id": "IN",
+    "state_name": "Indiana",
+    "county_fips": 18141,
+    "county_name": "St. Joseph",
+    "lat": 41.6771,
+    "lng": -86.269
+  },
+  {
+    "city": "Evansville",
+    "city_ascii": "Evansville",
+    "state_id": "IN",
+    "state_name": "Indiana",
+    "county_fips": 18163,
+    "county_name": "Vanderburgh",
+    "lat": 37.9882,
+    "lng": -87.5339
+  },
+  {
+    "city": "Des Moines",
+    "city_ascii": "Des Moines",
+    "state_id": "IA",
+    "state_name": "Iowa",
+    "county_fips": 19153,
+    "county_name": "Polk",
+    "lat": 41.5725,
+    "lng": -93.6104
+  },
+  {
+    "city": "Davenport",
+    "city_ascii": "Davenport",
+    "state_id": "IA",
+    "state_name": "Iowa",
+    "county_fips": 19163,
+    "county_name": "Scott",
+    "lat": 41.5558,
+    "lng": -90.6052
+  },
+  {
+    "city": "Cedar Rapids",
+    "city_ascii": "Cedar Rapids",
+    "state_id": "IA",
+    "state_name": "Iowa",
+    "county_fips": 19113,
+    "county_name": "Linn",
+    "lat": 41.9667,
+    "lng": -91.6781
+  },
+  {
+    "city": "Wichita",
+    "city_ascii": "Wichita",
+    "state_id": "KS",
+    "state_name": "Kansas",
+    "county_fips": 20173,
+    "county_name": "Sedgwick",
+    "lat": 37.6894,
+    "lng": -97.344
+  },
+  {
+    "city": "Overland Park",
+    "city_ascii": "Overland Park",
+    "state_id": "KS",
+    "state_name": "Kansas",
+    "county_fips": 20091,
+    "county_name": "Johnson",
+    "lat": 38.8871,
+    "lng": -94.6871
+  },
+  {
+    "city": "Kansas City",
+    "city_ascii": "Kansas City",
+    "state_id": "KS",
+    "state_name": "Kansas",
+    "county_fips": 20209,
+    "county_name": "Wyandotte",
+    "lat": 39.1234,
+    "lng": -94.7443
+  },
+  {
+    "city": "Louisville",
+    "city_ascii": "Louisville",
+    "state_id": "KY",
+    "state_name": "Kentucky",
+    "county_fips": 21111,
+    "county_name": "Jefferson",
+    "lat": 38.1662,
+    "lng": -85.6488
+  },
+  {
+    "city": "Lexington",
+    "city_ascii": "Lexington",
+    "state_id": "KY",
+    "state_name": "Kentucky",
+    "county_fips": 21067,
+    "county_name": "Fayette",
+    "lat": 38.0423,
+    "lng": -84.4587
+  },
+  {
+    "city": "New Orleans",
+    "city_ascii": "New Orleans",
+    "state_id": "LA",
+    "state_name": "Louisiana",
+    "county_fips": 22071,
+    "county_name": "Orleans",
+    "lat": 30.0687,
+    "lng": -89.9288
+  },
+  {
+    "city": "Baton Rouge",
+    "city_ascii": "Baton Rouge",
+    "state_id": "LA",
+    "state_name": "Louisiana",
+    "county_fips": 22033,
+    "county_name": "East Baton Rouge",
+    "lat": 30.4422,
+    "lng": -91.1314
+  },
+  {
+    "city": "Shreveport",
+    "city_ascii": "Shreveport",
+    "state_id": "LA",
+    "state_name": "Louisiana",
+    "county_fips": 22017,
+    "county_name": "Caddo",
+    "lat": 32.4659,
+    "lng": -93.7959
+  },
+  {
+    "city": "Portland",
+    "city_ascii": "Portland",
+    "state_id": "ME",
+    "state_name": "Maine",
+    "county_fips": 23005,
+    "county_name": "Cumberland",
+    "lat": 43.6772,
+    "lng": -70.2713
+  },
+  {
+    "city": "Bangor",
+    "city_ascii": "Bangor",
+    "state_id": "ME",
+    "state_name": "Maine",
+    "county_fips": 23019,
+    "county_name": "Penobscot",
+    "lat": 44.8322,
+    "lng": -68.7906
+  },
+  {
+    "city": "Baltimore",
+    "city_ascii": "Baltimore",
+    "state_id": "MD",
+    "state_name": "Maryland",
+    "county_fips": 24510,
+    "county_name": "Baltimore (city)",
+    "lat": 39.3051,
+    "lng": -76.6144
+  },
+  {
+    "city": "Hagerstown",
+    "city_ascii": "Hagerstown",
+    "state_id": "MD",
+    "state_name": "Maryland",
+    "county_fips": 24043,
+    "county_name": "Washington",
+    "lat": 39.6401,
+    "lng": -77.7217
+  },
+  {
+    "city": "Boston",
+    "city_ascii": "Boston",
+    "state_id": "MA",
+    "state_name": "Massachusetts",
+    "county_fips": 25025,
+    "county_name": "Suffolk",
+    "lat": 42.3189,
+    "lng": -71.0838
+  },
+  {
+    "city": "Springfield",
+    "city_ascii": "Springfield",
+    "state_id": "MA",
+    "state_name": "Massachusetts",
+    "county_fips": 25013,
+    "county_name": "Hampden",
+    "lat": 42.1155,
+    "lng": -72.5395
+  },
+  {
+    "city": "Worcester",
+    "city_ascii": "Worcester",
+    "state_id": "MA",
+    "state_name": "Massachusetts",
+    "county_fips": 25027,
+    "county_name": "Worcester",
+    "lat": 42.2705,
+    "lng": -71.8079
+  },
+  {
+    "city": "Detroit",
+    "city_ascii": "Detroit",
+    "state_id": "MI",
+    "state_name": "Michigan",
+    "county_fips": 26163,
+    "county_name": "Wayne",
+    "lat": 42.3834,
+    "lng": -83.1024
+  },
+  {
+    "city": "Grand Rapids",
+    "city_ascii": "Grand Rapids",
+    "state_id": "MI",
+    "state_name": "Michigan",
+    "county_fips": 26081,
+    "county_name": "Kent",
+    "lat": 42.9615,
+    "lng": -85.6557
+  },
+  {
+    "city": "Flint",
+    "city_ascii": "Flint",
+    "state_id": "MI",
+    "state_name": "Michigan",
+    "county_fips": 26049,
+    "county_name": "Genesee",
+    "lat": 43.0235,
+    "lng": -83.6921
+  },
+  {
+    "city": "Ann Arbor",
+    "city_ascii": "Ann Arbor",
+    "state_id": "MI",
+    "state_name": "Michigan",
+    "county_fips": 26161,
+    "county_name": "Washtenaw",
+    "lat": 42.2757,
+    "lng": -83.7312
+  },
+  {
+    "city": "Lansing",
+    "city_ascii": "Lansing",
+    "state_id": "MI",
+    "state_name": "Michigan",
+    "county_fips": 26065,
+    "county_name": "Ingham",
+    "lat": 42.7142,
+    "lng": -84.5598
+  },
+  {
+    "city": "Kalamazoo",
+    "city_ascii": "Kalamazoo",
+    "state_id": "MI",
+    "state_name": "Michigan",
+    "county_fips": 26077,
+    "county_name": "Kalamazoo",
+    "lat": 42.2749,
+    "lng": -85.5882
+  },
+  {
+    "city": "Minneapolis",
+    "city_ascii": "Minneapolis",
+    "state_id": "MN",
+    "state_name": "Minnesota",
+    "county_fips": 27053,
+    "county_name": "Hennepin",
+    "lat": 44.9635,
+    "lng": -93.2679
+  },
+  {
+    "city": "Saint Paul",
+    "city_ascii": "Saint Paul",
+    "state_id": "MN",
+    "state_name": "Minnesota",
+    "county_fips": 27123,
+    "county_name": "Ramsey",
+    "lat": 44.9477,
+    "lng": -93.104
+  },
+  {
+    "city": "Duluth",
+    "city_ascii": "Duluth",
+    "state_id": "MN",
+    "state_name": "Minnesota",
+    "county_fips": 27137,
+    "county_name": "St. Louis",
+    "lat": 46.7797,
+    "lng": -92.1334
+  },
+  {
+    "city": "Rochester",
+    "city_ascii": "Rochester",
+    "state_id": "MN",
+    "state_name": "Minnesota",
+    "county_fips": 27109,
+    "county_name": "Olmsted",
+    "lat": 44.0152,
+    "lng": -92.4776
+  },
+  {
+    "city": "Jackson",
+    "city_ascii": "Jackson",
+    "state_id": "MS",
+    "state_name": "Mississippi",
+    "county_fips": 28049,
+    "county_name": "Hinds",
+    "lat": 32.3163,
+    "lng": -90.2124
+  },
+  {
+    "city": "Gulfport",
+    "city_ascii": "Gulfport",
+    "state_id": "MS",
+    "state_name": "Mississippi",
+    "county_fips": 28047,
+    "county_name": "Harrison",
+    "lat": 30.4271,
+    "lng": -89.0703
+  },
+  {
+    "city": "Saint Louis",
+    "city_ascii": "Saint Louis",
+    "state_id": "MO",
+    "state_name": "Missouri",
+    "county_fips": 29510,
+    "county_name": "St. Louis (city)",
+    "lat": 38.6358,
+    "lng": -90.2451
+  },
+  {
+    "city": "Kansas City",
+    "city_ascii": "Kansas City",
+    "state_id": "MO",
+    "state_name": "Missouri",
+    "county_fips": 29095,
+    "county_name": "Jackson",
+    "lat": 39.1239,
+    "lng": -94.5541
+  },
+  {
+    "city": "Springfield",
+    "city_ascii": "Springfield",
+    "state_id": "MO",
+    "state_name": "Missouri",
+    "county_fips": 29077,
+    "county_name": "Greene",
+    "lat": 37.1943,
+    "lng": -93.2916
+  },
+  {
+    "city": "Billings",
+    "city_ascii": "Billings",
+    "state_id": "MT",
+    "state_name": "Montana",
+    "county_fips": 30111,
+    "county_name": "Yellowstone",
+    "lat": 45.7892,
+    "lng": -108.5498
+  },
+  {
+    "city": "Missoula",
+    "city_ascii": "Missoula",
+    "state_id": "MT",
+    "state_name": "Montana",
+    "county_fips": 30063,
+    "county_name": "Missoula",
+    "lat": 46.8687,
+    "lng": -114.0089
+  },
+  {
+    "city": "Omaha",
+    "city_ascii": "Omaha",
+    "state_id": "NE",
+    "state_name": "Nebraska",
+    "county_fips": 31055,
+    "county_name": "Douglas",
+    "lat": 41.2634,
+    "lng": -96.0453
+  },
+  {
+    "city": "Lincoln",
+    "city_ascii": "Lincoln",
+    "state_id": "NE",
+    "state_name": "Nebraska",
+    "county_fips": 31109,
+    "county_name": "Lancaster",
+    "lat": 40.8102,
+    "lng": -96.6808
+  },
+  {
+    "city": "Nashua",
+    "city_ascii": "Nashua",
+    "state_id": "NH",
+    "state_name": "New Hampshire",
+    "county_fips": 33011,
+    "county_name": "Hillsborough",
+    "lat": 42.7492,
+    "lng": -71.491
+  },
+  {
+    "city": "Manchester",
+    "city_ascii": "Manchester",
+    "state_id": "NH",
+    "state_name": "New Hampshire",
+    "county_fips": 33011,
+    "county_name": "Hillsborough",
+    "lat": 42.9844,
+    "lng": -71.4445
+  },
+  {
+    "city": "Trenton",
+    "city_ascii": "Trenton",
+    "state_id": "NJ",
+    "state_name": "New Jersey",
+    "county_fips": 34021,
+    "county_name": "Mercer",
+    "lat": 40.2237,
+    "lng": -74.764
+  },
+  {
+    "city": "Newark",
+    "city_ascii": "Newark",
+    "state_id": "NJ",
+    "state_name": "New Jersey",
+    "county_fips": 34013,
+    "county_name": "Essex",
+    "lat": 40.7242,
+    "lng": -74.1724
+  },
+  {
+    "city": "Jersey City",
+    "city_ascii": "Jersey City",
+    "state_id": "NJ",
+    "state_name": "New Jersey",
+    "county_fips": 34017,
+    "county_name": "Hudson",
+    "lat": 40.7161,
+    "lng": -74.0683
+  },
+  {
+    "city": "Atlantic City",
+    "city_ascii": "Atlantic City",
+    "state_id": "NJ",
+    "state_name": "New Jersey",
+    "county_fips": 34001,
+    "county_name": "Atlantic",
+    "lat": 39.3795,
+    "lng": -74.4524
+  },
+  {
+    "city": "Albuquerque",
+    "city_ascii": "Albuquerque",
+    "state_id": "NM",
+    "state_name": "New Mexico",
+    "county_fips": 35001,
+    "county_name": "Bernalillo",
+    "lat": 35.1055,
+    "lng": -106.6476
+  },
+  {
+    "city": "Las Cruces",
+    "city_ascii": "Las Cruces",
+    "state_id": "NM",
+    "state_name": "New Mexico",
+    "county_fips": 35013,
+    "county_name": "Doña Ana",
+    "lat": 32.3265,
+    "lng": -106.7893
+  },
+  {
+    "city": "Santa Fe",
+    "city_ascii": "Santa Fe",
+    "state_id": "NM",
+    "state_name": "New Mexico",
+    "county_fips": 35049,
+    "county_name": "Santa Fe",
+    "lat": 35.6619,
+    "lng": -105.9818
+  },
+  {
+    "city": "New York",
+    "city_ascii": "New York",
+    "state_id": "NY",
+    "state_name": "New York",
+    "county_fips": 36061,
+    "county_name": "New York",
+    "lat": 40.6943,
+    "lng": -73.9249
+  },
+  {
+    "city": "Buffalo",
+    "city_ascii": "Buffalo",
+    "state_id": "NY",
+    "state_name": "New York",
+    "county_fips": 36029,
+    "county_name": "Erie",
+    "lat": 42.9016,
+    "lng": -78.8487
+  },
+  {
+    "city": "Rochester",
+    "city_ascii": "Rochester",
+    "state_id": "NY",
+    "state_name": "New York",
+    "county_fips": 36055,
+    "county_name": "Monroe",
+    "lat": 43.1681,
+    "lng": -77.6162
+  },
+  {
+    "city": "Albany",
+    "city_ascii": "Albany",
+    "state_id": "NY",
+    "state_name": "New York",
+    "county_fips": 36001,
+    "county_name": "Albany",
+    "lat": 42.6664,
+    "lng": -73.7987
+  },
+  {
+    "city": "Syracuse",
+    "city_ascii": "Syracuse",
+    "state_id": "NY",
+    "state_name": "New York",
+    "county_fips": 36067,
+    "county_name": "Onondaga",
+    "lat": 43.0409,
+    "lng": -76.1438
+  },
+  {
+    "city": "Charlotte",
+    "city_ascii": "Charlotte",
+    "state_id": "NC",
+    "state_name": "North Carolina",
+    "county_fips": 37119,
+    "county_name": "Mecklenburg",
+    "lat": 35.208,
+    "lng": -80.8308
+  },
+  {
+    "city": "Raleigh",
+    "city_ascii": "Raleigh",
+    "state_id": "NC",
+    "state_name": "North Carolina",
+    "county_fips": 37183,
+    "county_name": "Wake",
+    "lat": 35.8323,
+    "lng": -78.6441
+  },
+  {
+    "city": "Fargo",
+    "city_ascii": "Fargo",
+    "state_id": "ND",
+    "state_name": "North Dakota",
+    "county_fips": 38017,
+    "county_name": "Cass",
+    "lat": 46.8654,
+    "lng": -96.829
+  },
+  {
+    "city": "Bismarck",
+    "city_ascii": "Bismarck",
+    "state_id": "ND",
+    "state_name": "North Dakota",
+    "county_fips": 38015,
+    "county_name": "Burleigh",
+    "lat": 46.8127,
+    "lng": -100.7694
+  },
+  {
+    "city": "Grand Forks",
+    "city_ascii": "Grand Forks",
+    "state_id": "ND",
+    "state_name": "North Dakota",
+    "county_fips": 38035,
+    "county_name": "Grand Forks",
+    "lat": 47.912,
+    "lng": -97.0751
+  },
+  {
+    "city": "Cleveland",
+    "city_ascii": "Cleveland",
+    "state_id": "OH",
+    "state_name": "Ohio",
+    "county_fips": 39035,
+    "county_name": "Cuyahoga",
+    "lat": 41.4766,
+    "lng": -81.6805
+  },
+  {
+    "city": "Cincinnati",
+    "city_ascii": "Cincinnati",
+    "state_id": "OH",
+    "state_name": "Ohio",
+    "county_fips": 39061,
+    "county_name": "Hamilton",
+    "lat": 39.1412,
+    "lng": -84.506
+  },
+  {
+    "city": "Columbus",
+    "city_ascii": "Columbus",
+    "state_id": "OH",
+    "state_name": "Ohio",
+    "county_fips": 39049,
+    "county_name": "Franklin",
+    "lat": 39.9859,
+    "lng": -82.9852
+  },
+  {
+    "city": "Dayton",
+    "city_ascii": "Dayton",
+    "state_id": "OH",
+    "state_name": "Ohio",
+    "county_fips": 39113,
+    "county_name": "Montgomery",
+    "lat": 39.7798,
+    "lng": -84.1999
+  },
+  {
+    "city": "Akron",
+    "city_ascii": "Akron",
+    "state_id": "OH",
+    "state_name": "Ohio",
+    "county_fips": 39153,
+    "county_name": "Summit",
+    "lat": 41.0802,
+    "lng": -81.5219
+  },
+  {
+    "city": "Toledo",
+    "city_ascii": "Toledo",
+    "state_id": "OH",
+    "state_name": "Ohio",
+    "county_fips": 39095,
+    "county_name": "Lucas",
+    "lat": 41.6639,
+    "lng": -83.582
+  },
+  {
+    "city": "Youngstown",
+    "city_ascii": "Youngstown",
+    "state_id": "OH",
+    "state_name": "Ohio",
+    "county_fips": 39099,
+    "county_name": "Mahoning",
+    "lat": 41.0994,
+    "lng": -80.6463
+  },
+  {
+    "city": "Canton",
+    "city_ascii": "Canton",
+    "state_id": "OH",
+    "state_name": "Ohio",
+    "county_fips": 39151,
+    "county_name": "Stark",
+    "lat": 40.8082,
+    "lng": -81.3678
+  },
+  {
+    "city": "Oklahoma City",
+    "city_ascii": "Oklahoma City",
+    "state_id": "OK",
+    "state_name": "Oklahoma",
+    "county_fips": 40109,
+    "county_name": "Oklahoma",
+    "lat": 35.4677,
+    "lng": -97.5138
+  },
+  {
+    "city": "Tulsa",
+    "city_ascii": "Tulsa",
+    "state_id": "OK",
+    "state_name": "Oklahoma",
+    "county_fips": 40143,
+    "county_name": "Tulsa",
+    "lat": 36.1284,
+    "lng": -95.9037
+  },
+  {
+    "city": "Norman",
+    "city_ascii": "Norman",
+    "state_id": "OK",
+    "state_name": "Oklahoma",
+    "county_fips": 40027,
+    "county_name": "Cleveland",
+    "lat": 35.2335,
+    "lng": -97.3471
+  },
+  {
+    "city": "Broken Arrow",
+    "city_ascii": "Broken Arrow",
+    "state_id": "OK",
+    "state_name": "Oklahoma",
+    "county_fips": 40143,
+    "county_name": "Tulsa",
+    "lat": 36.0367,
+    "lng": -95.7808
+  },
+  {
+    "city": "Portland",
+    "city_ascii": "Portland",
+    "state_id": "OR",
+    "state_name": "Oregon",
+    "county_fips": 41051,
+    "county_name": "Multnomah",
+    "lat": 45.5372,
+    "lng": -122.65
+  },
+  {
+    "city": "Eugene",
+    "city_ascii": "Eugene",
+    "state_id": "OR",
+    "state_name": "Oregon",
+    "county_fips": 41039,
+    "county_name": "Lane",
+    "lat": 44.0562,
+    "lng": -123.1172
+  },
+  {
+    "city": "Salem",
+    "city_ascii": "Salem",
+    "state_id": "OR",
+    "state_name": "Oregon",
+    "county_fips": 41047,
+    "county_name": "Marion",
+    "lat": 44.9231,
+    "lng": -123.0245
+  },
+  {
+    "city": "Philadelphia",
+    "city_ascii": "Philadelphia",
+    "state_id": "PA",
+    "state_name": "Pennsylvania",
+    "county_fips": 42101,
+    "county_name": "Philadelphia",
+    "lat": 40.0076,
+    "lng": -75.134
+  },
+  {
+    "city": "Pittsburgh",
+    "city_ascii": "Pittsburgh",
+    "state_id": "PA",
+    "state_name": "Pennsylvania",
+    "county_fips": 42003,
+    "county_name": "Allegheny",
+    "lat": 40.4396,
+    "lng": -79.9763
+  },
+  {
+    "city": "Allentown",
+    "city_ascii": "Allentown",
+    "state_id": "PA",
+    "state_name": "Pennsylvania",
+    "county_fips": 42077,
+    "county_name": "Lehigh",
+    "lat": 40.5962,
+    "lng": -75.4756
+  },
+  {
+    "city": "Harrisburg",
+    "city_ascii": "Harrisburg",
+    "state_id": "PA",
+    "state_name": "Pennsylvania",
+    "county_fips": 42043,
+    "county_name": "Dauphin",
+    "lat": 40.2752,
+    "lng": -76.8843
+  },
+  {
+    "city": "Lancaster",
+    "city_ascii": "Lancaster",
+    "state_id": "PA",
+    "state_name": "Pennsylvania",
+    "county_fips": 42071,
+    "county_name": "Lancaster",
+    "lat": 40.0421,
+    "lng": -76.3012
+  },
+  {
+    "city": "Scranton",
+    "city_ascii": "Scranton",
+    "state_id": "PA",
+    "state_name": "Pennsylvania",
+    "county_fips": 42069,
+    "county_name": "Lackawanna",
+    "lat": 41.4043,
+    "lng": -75.6649
+  },
+  {
+    "city": "Reading",
+    "city_ascii": "Reading",
+    "state_id": "PA",
+    "state_name": "Pennsylvania",
+    "county_fips": 42011,
+    "county_name": "Berks",
+    "lat": 40.34,
+    "lng": -75.9266
+  },
+  {
+    "city": "York",
+    "city_ascii": "York",
+    "state_id": "PA",
+    "state_name": "Pennsylvania",
+    "county_fips": 42133,
+    "county_name": "York",
+    "lat": 39.9651,
+    "lng": -76.7315
+  },
+  {
+    "city": "Providence",
+    "city_ascii": "Providence",
+    "state_id": "RI",
+    "state_name": "Rhode Island",
+    "county_fips": 44007,
+    "county_name": "Providence",
+    "lat": 41.8229,
+    "lng": -71.4186
+  },
+  {
+    "city": "Charleston",
+    "city_ascii": "Charleston",
+    "state_id": "SC",
+    "state_name": "South Carolina",
+    "county_fips": 45019,
+    "county_name": "Charleston",
+    "lat": 32.8137,
+    "lng": -79.9643
+  },
+  {
+    "city": "Columbia",
+    "city_ascii": "Columbia",
+    "state_id": "SC",
+    "state_name": "South Carolina",
+    "county_fips": 45079,
+    "county_name": "Richland",
+    "lat": 34.0366,
+    "lng": -80.9043
+  },
+  {
+    "city": "Greenville",
+    "city_ascii": "Greenville",
+    "state_id": "SC",
+    "state_name": "South Carolina",
+    "county_fips": 45045,
+    "county_name": "Greenville",
+    "lat": 34.8364,
+    "lng": -82.3649
+  },
+  {
+    "city": "Myrtle Beach",
+    "city_ascii": "Myrtle Beach",
+    "state_id": "SC",
+    "state_name": "South Carolina",
+    "county_fips": 45051,
+    "county_name": "Horry",
+    "lat": 33.7095,
+    "lng": -78.8844
+  },
+  {
+    "city": "Sioux Falls",
+    "city_ascii": "Sioux Falls",
+    "state_id": "SD",
+    "state_name": "South Dakota",
+    "county_fips": 46099,
+    "county_name": "Minnehaha",
+    "lat": 43.5382,
+    "lng": -96.7315
+  },
+  {
+    "city": "Rapid City",
+    "city_ascii": "Rapid City",
+    "state_id": "SD",
+    "state_name": "South Dakota",
+    "county_fips": 46103,
+    "county_name": "Pennington",
+    "lat": 44.0709,
+    "lng": -103.22
+  },
+  {
+    "city": "Memphis",
+    "city_ascii": "Memphis",
+    "state_id": "TN",
+    "state_name": "Tennessee",
+    "county_fips": 47157,
+    "county_name": "Shelby",
+    "lat": 35.1047,
+    "lng": -89.9773
+  },
+  {
+    "city": "Nashville",
+    "city_ascii": "Nashville",
+    "state_id": "TN",
+    "state_name": "Tennessee",
+    "county_fips": 47037,
+    "county_name": "Davidson",
+    "lat": 36.1714,
+    "lng": -86.7844
+  },
+  {
+    "city": "Knoxville",
+    "city_ascii": "Knoxville",
+    "state_id": "TN",
+    "state_name": "Tennessee",
+    "county_fips": 47093,
+    "county_name": "Knox",
+    "lat": 35.969,
+    "lng": -83.9498
+  },
+  {
+    "city": "Chattanooga",
+    "city_ascii": "Chattanooga",
+    "state_id": "TN",
+    "state_name": "Tennessee",
+    "county_fips": 47065,
+    "county_name": "Hamilton",
+    "lat": 35.0657,
+    "lng": -85.2488
+  },
+  {
+    "city": "Dallas",
+    "city_ascii": "Dallas",
+    "state_id": "TX",
+    "state_name": "Texas",
+    "county_fips": 48113,
+    "county_name": "Dallas",
+    "lat": 32.7938,
+    "lng": -96.7659
+  },
+  {
+    "city": "Houston",
+    "city_ascii": "Houston",
+    "state_id": "TX",
+    "state_name": "Texas",
+    "county_fips": 48201,
+    "county_name": "Harris",
+    "lat": 29.7871,
+    "lng": -95.3936
+  },
+  {
+    "city": "San Antonio",
+    "city_ascii": "San Antonio",
+    "state_id": "TX",
+    "state_name": "Texas",
+    "county_fips": 48029,
+    "county_name": "Bexar",
+    "lat": 29.4722,
+    "lng": -98.5247
+  },
+  {
+    "city": "Austin",
+    "city_ascii": "Austin",
+    "state_id": "TX",
+    "state_name": "Texas",
+    "county_fips": 48453,
+    "county_name": "Travis",
+    "lat": 30.3038,
+    "lng": -97.7545
+  },
+  {
+    "city": "Fort Worth",
+    "city_ascii": "Fort Worth",
+    "state_id": "TX",
+    "state_name": "Texas",
+    "county_fips": 48439,
+    "county_name": "Tarrant",
+    "lat": 32.7813,
+    "lng": -97.3466
+  },
+  {
+    "city": "El Paso",
+    "city_ascii": "El Paso",
+    "state_id": "TX",
+    "state_name": "Texas",
+    "county_fips": 48141,
+    "county_name": "El Paso",
+    "lat": 31.8478,
+    "lng": -106.431
+  },
+  {
+    "city": "Salt Lake City",
+    "city_ascii": "Salt Lake City",
+    "state_id": "UT",
+    "state_name": "Utah",
+    "county_fips": 49035,
+    "county_name": "Salt Lake",
+    "lat": 40.7774,
+    "lng": -111.9301
+  },
+  {
+    "city": "Ogden",
+    "city_ascii": "Ogden",
+    "state_id": "UT",
+    "state_name": "Utah",
+    "county_fips": 49057,
+    "county_name": "Weber",
+    "lat": 41.2281,
+    "lng": -111.9677
+  },
+  {
+    "city": "Provo",
+    "city_ascii": "Provo",
+    "state_id": "UT",
+    "state_name": "Utah",
+    "county_fips": 49049,
+    "county_name": "Utah",
+    "lat": 40.2458,
+    "lng": -111.6457
+  },
+  {
+    "city": "Burlington",
+    "city_ascii": "Burlington",
+    "state_id": "VT",
+    "state_name": "Vermont",
+    "county_fips": 50007,
+    "county_name": "Chittenden",
+    "lat": 44.4877,
+    "lng": -73.2314
+  },
+  {
+    "city": "Barre",
+    "city_ascii": "Barre",
+    "state_id": "VT",
+    "state_name": "Vermont",
+    "county_fips": 50023,
+    "county_name": "Washington",
+    "lat": 44.1997,
+    "lng": -72.5083
+  },
+  {
+    "city": "Virginia Beach",
+    "city_ascii": "Virginia Beach",
+    "state_id": "VA",
+    "state_name": "Virginia",
+    "county_fips": 51810,
+    "county_name": "Virginia Beach (city)",
+    "lat": 36.7335,
+    "lng": -76.0435
+  },
+  {
+    "city": "Richmond",
+    "city_ascii": "Richmond",
+    "state_id": "VA",
+    "state_name": "Virginia",
+    "county_fips": 51760,
+    "county_name": "Richmond (city)",
+    "lat": 37.5294,
+    "lng": -77.4755
+  },
+  {
+    "city": "Norfolk",
+    "city_ascii": "Norfolk",
+    "state_id": "VA",
+    "state_name": "Virginia",
+    "county_fips": 51710,
+    "county_name": "Norfolk (city)",
+    "lat": 36.8945,
+    "lng": -76.259
+  },
+  {
+    "city": "Chesapeake",
+    "city_ascii": "Chesapeake",
+    "state_id": "VA",
+    "state_name": "Virginia",
+    "county_fips": 51550,
+    "county_name": "Chesapeake (city)",
+    "lat": 36.6778,
+    "lng": -76.3024
+  },
+  {
+    "city": "Roanoke",
+    "city_ascii": "Roanoke",
+    "state_id": "VA",
+    "state_name": "Virginia",
+    "county_fips": 51770,
+    "county_name": "Roanoke (city)",
+    "lat": 37.2784,
+    "lng": -79.9581
+  },
+  {
+    "city": "Seattle",
+    "city_ascii": "Seattle",
+    "state_id": "WA",
+    "state_name": "Washington",
+    "county_fips": 53033,
+    "county_name": "King",
+    "lat": 47.6217,
+    "lng": -122.3238
+  },
+  {
+    "city": "Spokane",
+    "city_ascii": "Spokane",
+    "state_id": "WA",
+    "state_name": "Washington",
+    "county_fips": 53063,
+    "county_name": "Spokane",
+    "lat": 47.6671,
+    "lng": -117.433
+  },
+  {
+    "city": "Kennewick",
+    "city_ascii": "Kennewick",
+    "state_id": "WA",
+    "state_name": "Washington",
+    "county_fips": 53005,
+    "county_name": "Benton",
+    "lat": 46.1979,
+    "lng": -119.1732
+  },
+  {
+    "city": "Bremerton",
+    "city_ascii": "Bremerton",
+    "state_id": "WA",
+    "state_name": "Washington",
+    "county_fips": 53035,
+    "county_name": "Kitsap",
+    "lat": 47.5436,
+    "lng": -122.7121
+  },
+  {
+    "city": "Tacoma",
+    "city_ascii": "Tacoma",
+    "state_id": "WA",
+    "state_name": "Washington",
+    "county_fips": 53053,
+    "county_name": "Pierce",
+    "lat": 47.2431,
+    "lng": -122.4531
+  },
+  {
+    "city": "Huntington",
+    "city_ascii": "Huntington",
+    "state_id": "WV",
+    "state_name": "West Virginia",
+    "county_fips": 54011,
+    "county_name": "Cabell",
+    "lat": 38.4109,
+    "lng": -82.4344
+  },
+  {
+    "city": "Charleston",
+    "city_ascii": "Charleston",
+    "state_id": "WV",
+    "state_name": "West Virginia",
+    "county_fips": 54039,
+    "county_name": "Kanawha",
+    "lat": 38.3484,
+    "lng": -81.6323
+  },
+  {
+    "city": "Milwaukee",
+    "city_ascii": "Milwaukee",
+    "state_id": "WI",
+    "state_name": "Wisconsin",
+    "county_fips": 55079,
+    "county_name": "Milwaukee",
+    "lat": 43.064,
+    "lng": -87.9669
+  },
+  {
+    "city": "Madison",
+    "city_ascii": "Madison",
+    "state_id": "WI",
+    "state_name": "Wisconsin",
+    "county_fips": 55025,
+    "county_name": "Dane",
+    "lat": 43.0809,
+    "lng": -89.3921
+  },
+  {
+    "city": "Appleton",
+    "city_ascii": "Appleton",
+    "state_id": "WI",
+    "state_name": "Wisconsin",
+    "county_fips": 55087,
+    "county_name": "Outagamie",
+    "lat": 44.2775,
+    "lng": -88.3896
+  },
+  {
+    "city": "Green Bay",
+    "city_ascii": "Green Bay",
+    "state_id": "WI",
+    "state_name": "Wisconsin",
+    "county_fips": 55009,
+    "county_name": "Brown",
+    "lat": 44.5151,
+    "lng": -87.9895
+  },
+  {
+    "city": "Cheyenne",
+    "city_ascii": "Cheyenne",
+    "state_id": "WY",
+    "state_name": "Wyoming",
+    "county_fips": 56021,
+    "county_name": "Laramie",
+    "lat": 41.1418,
+    "lng": -104.7943
+  },
+  {
+    "city": "Casper",
+    "city_ascii": "Casper",
+    "state_id": "WY",
+    "state_name": "Wyoming",
+    "county_fips": 56025,
+    "county_name": "Natrona",
+    "lat": 42.843,
+    "lng": -106.3205
+  }
+]
