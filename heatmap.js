@@ -14,6 +14,8 @@ AmCharts.ready(function() {
     var select = document.getElementById( 'cities' );
     map = new AmCharts.AmMap();
 
+    map.colorSteps = 100;
+
     var dataProvider = {
         mapVar: AmCharts.maps.usCounties,
         images: [],
@@ -21,7 +23,11 @@ AmCharts.ready(function() {
     }; // end dataProvider
 
     map.areasSettings = {
-        autoZoom: true
+        autoZoom: true,
+        color: "#b3e1eb",
+        colorSolid: "#029bbd",
+        outline: false,
+        outlineAlpha: 0
     };
 
     map.addClassNames = {
@@ -31,7 +37,8 @@ AmCharts.ready(function() {
     map.valueLegend = {
         right : 10,
         minValue : '<1',
-        maxValue : '350+'
+        maxValue : '50+',
+
     };
 
     map.dataProvider = dataProvider;
@@ -95,15 +102,18 @@ function statesDropdown(){
 // Display all Providers on the Counties map
 function displayProviders(id){
     map.dataProvider.areas = [];
-    //
-    // map.dataProvider.areas.push(test);
-    // map.validateData();
-    // console.log('map.dataProvider.areas', map.dataProvider.areas);
     var indData = providers.categories[id].counties;
     for(var x in indData){
         var providerToAdd = new AmCharts.MapArea();
-        providerToAdd.id = 'C' + indData[x].county_fips;
-        providerToAdd.value = indData[x].providers;
+        var fipsLength = indData[x].county_fips.toString().length;
+        if(fipsLength <= 4) {
+            providerToAdd.id = 'C0' + indData[x].county_fips;
+        }
+        else{
+            providerToAdd.id = 'C' + indData[x].county_fips;
+        }
+        providerToAdd.value = indData[x].providers / 20;
+        providerToAdd.title = '<strong>' + indData[x].county + ' County, '+ indData[x].state + '</strong> </br> <strong>Providers: </strong>' + indData[x].providers;
         providerToAdd.chart = map.dataProvider;
         map.dataProvider.areas.push(providerToAdd);
     }
