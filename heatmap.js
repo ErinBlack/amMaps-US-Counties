@@ -166,7 +166,13 @@ function cityDropdown (stateId){
 
 // Display all Providers on the Counties map
 function displayProviders(id){
-    map.dataProvider.areas = [];
+    map.dataProvider.areas = [{
+        "id": "US",
+        "outline": true,
+        "outlineColor": "#707070",
+        "outlineThickness": 1,
+        "outlineAlpha": 0.3
+      }];
     var indData = providers.categories[id].counties;
     for(var x in indData){
         var providerToAdd = new AmCharts.MapArea();
