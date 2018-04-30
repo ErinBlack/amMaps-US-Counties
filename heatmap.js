@@ -104,7 +104,7 @@ AmCharts.ready(function() {
 function addCity (){
     for ( var x in cities ) {
         var city = new AmCharts.MapImage();
-          city.title = '<strong>' + cities[x].city + ', ' + cities[x].state_name + '</strong>';
+          city.title = '<strong>' + cities[x].city + ', ' + cities[x].state_id + '</strong>';
           city.latitude = cities[x].lat;
           city.longitude = cities[x].lng;
           city.countyFips = cities[x].county_fips;
