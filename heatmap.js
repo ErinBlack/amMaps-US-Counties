@@ -49,7 +49,13 @@ AmCharts.ready(function() {
     var dataProvider = {
         mapVar: AmCharts.maps.usCounties,
         images: [],
-        areas: []
+        areas: [{
+            "id": "US",
+            "outline": true,
+            "outlineColor": "#707070",
+            "outlineThickness": 1,
+            "outlineAlpha": 0.3
+          }]
     }; // end dataProvider
 
     map.zoomControl = {
@@ -63,12 +69,13 @@ AmCharts.ready(function() {
         autoZoom: true,
         color: "#b3e1eb",
         colorSolid: "#029bbd",
-        outline: false,
+        outline: true,
         outlineAlpha: 0
     };
 
     map.imagesSettings = {
-        color: '#707070'
+        color: '#707070',
+
     };
 
     map.addClassNames = {
@@ -77,7 +84,7 @@ AmCharts.ready(function() {
 
     map.valueLegend = {
         right : 10,
-        minValue : '<1',
+        minValue : '1',
         maxValue : '250+',
 
     };
@@ -97,13 +104,14 @@ AmCharts.ready(function() {
 function addCity (){
     for ( var x in cities ) {
         var city = new AmCharts.MapImage();
-          city.title = cities[x].city;
+          city.title = '<strong>' + cities[x].city + ', ' + cities[x].state_name + '</strong>';
           city.latitude = cities[x].lat;
           city.longitude = cities[x].lng;
           city.countyFips = cities[x].county_fips;
           city.svgPath = targetSVG;
           city.zoomLevel = 9;
-          city.scale = 0.5;
+          city.scale = .6;
+          city.rollOverScale = 2;
           city.chart = map;
           map.dataProvider.images.push( city );
          city.validate();
