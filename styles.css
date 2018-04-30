@@ -2,3 +2,11 @@
     fill: #EEEEEE;
     stroke: #DDDDDD;
 }
+.c-select__fullWidth {
+    width: 100%;
+    margin-top:20px;
+}
+
+.c-select__fullWidth--constrained {
+    width: 80%;
+}

@@ -145,7 +145,7 @@ function cityDropdown (stateId){
         .find('option')
         .remove()
         .end()
-        .append('<option value="">- Select a City -</option>')
+        .append('<option value=""></option>')
     for ( var x in cities ) {
         if(cities[x].state_id == stateId) {
             var option = document.createElement( 'option' );
