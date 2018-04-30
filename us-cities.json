@@ -79,16 +79,6 @@ cities = [
     "lat": 32.1558,
     "lng": -110.8777
   },
-  {
-    "city": "Mesa",
-    "city_ascii": "Mesa",
-    "state_id": "AZ",
-    "state_name": "Arizona",
-    "county_fips": 4013,
-    "county_name": "Maricopa",
-    "lat": 33.4016,
-    "lng": -111.718
-  },
 
   {
     "city": "Scottsdale",
@@ -199,16 +189,6 @@ cities = [
     "county_name": "El Paso",
     "lat": 38.8673,
     "lng": -104.7605
-  },
-  {
-    "city": "Aurora",
-    "city_ascii": "Aurora",
-    "state_id": "CO",
-    "state_name": "Colorado",
-    "county_fips": 8001,
-    "county_name": "Adams",
-    "lat": 39.7085,
-    "lng": -104.7274
   },
   {
     "city": "Fort Collins",
@@ -519,16 +499,6 @@ cities = [
     "county_name": "Johnson",
     "lat": 38.8871,
     "lng": -94.6871
-  },
-  {
-    "city": "Kansas City",
-    "city_ascii": "Kansas City",
-    "state_id": "KS",
-    "state_name": "Kansas",
-    "county_fips": 20209,
-    "county_name": "Wyandotte",
-    "lat": 39.1234,
-    "lng": -94.7443
   },
   {
     "city": "Louisville",
@@ -881,16 +851,6 @@ cities = [
     "lng": -74.1724
   },
   {
-    "city": "Jersey City",
-    "city_ascii": "Jersey City",
-    "state_id": "NJ",
-    "state_name": "New Jersey",
-    "county_fips": 34017,
-    "county_name": "Hudson",
-    "lat": 40.7161,
-    "lng": -74.0683
-  },
-  {
     "city": "Atlantic City",
     "city_ascii": "Atlantic City",
     "state_id": "NJ",
@@ -1129,26 +1089,6 @@ cities = [
     "county_name": "Tulsa",
     "lat": 36.1284,
     "lng": -95.9037
-  },
-  {
-    "city": "Norman",
-    "city_ascii": "Norman",
-    "state_id": "OK",
-    "state_name": "Oklahoma",
-    "county_fips": 40027,
-    "county_name": "Cleveland",
-    "lat": 35.2335,
-    "lng": -97.3471
-  },
-  {
-    "city": "Broken Arrow",
-    "city_ascii": "Broken Arrow",
-    "state_id": "OK",
-    "state_name": "Oklahoma",
-    "county_fips": 40143,
-    "county_name": "Tulsa",
-    "lat": 36.0367,
-    "lng": -95.7808
   },
   {
     "city": "Portland",
@@ -1509,16 +1449,6 @@ cities = [
     "county_name": "Norfolk (city)",
     "lat": 36.8945,
     "lng": -76.259
-  },
-  {
-    "city": "Chesapeake",
-    "city_ascii": "Chesapeake",
-    "state_id": "VA",
-    "state_name": "Virginia",
-    "county_fips": 51550,
-    "county_name": "Chesapeake (city)",
-    "lat": 36.6778,
-    "lng": -76.3024
   },
   {
     "city": "Roanoke",

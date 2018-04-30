@@ -19,20 +19,45 @@
 		<script src="ammap/maps/js/usCounties.js" type="text/javascript"></script>
         <script src="heatmap.js" type="text/javascript"></script>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fieldnation.com/wp-content/themes/fieldnation-wordpress/theme.css?ver=1524070171055">
 
     </head>
 
     <body>
-        <select id="industiesSelect" >
-            <option value="">- Select an Industry - </option>
-        </select>
-        <select id="statesSelect">
-            <option value="">- Select a State - </option>
-        </select>
-        <select id="citiesSelect" onchange="citySelected()">
-            <option value="">- Select a City - </option>
-        </select>
-        <div id="mapdiv" style="width: 100%; background-color:#FFFFFF; height: 500px;"></div>
+        <div class="c-sections">
+            <div class="c-sections__section c-sections__section--constrained">
+                <div class="o-grid">
+                    <div class="o-grid__col o-grid__col--4of12 o-grid__col--4of12--up-medium">
+                        <h2 class="o-hdg o-hdg--h3 u-textGreen">STEP 1.</h2>
+                        <div class="">
+                            Select an Industry. *
+                        </div>
+                        <select id="industiesSelect" >
+                            <option value="">- Select an industry - </option>
+                        </select>
+                    </div>
+                    <div class="o-grid__col o-grid__col--4of12 o-grid__col--4of12--up-medium">
+                        <h2 class="o-hdg o-hdg--h3 u-textGreen">STEP 2.</h2>
+                        <div class="">
+                            Select a State. *
+                        </div>
+                        <select id="statesSelect">
+                            <option value="">- Select a state. - </option>
+                        </select>
+                    </div>
+                    <div class="o-grid__col o-grid__col--4of12 o-grid__col--4of12--up-medium">
+                        <h2 class="o-hdg o-hdg--h3 u-textGreen">STEP 3.</h2>
+                        <div class="">
+                            Select a city. *
+                        </div>
+                        <select id="citiesSelect">
+                            <option value="">- Select a City - </option>
+                        </select>
+                    </div>
+                </div>
+                <div id="mapdiv" style="width: 100%; background-color:#FFFFFF; height: 500px;"></div>
+            </div>
+        </div>
     </body>
 
 </html>
