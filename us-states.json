@@ -69,8 +69,8 @@ states = [
     {
       "state_id": "HI",
       "state_name": "Hawaii",
-      "lat": "21.094318",
-      "long": "-157.498337"
+      "lat": "22.9596",
+      "long": "-104.404419"
       },
   {
     "state_id": "ID",
