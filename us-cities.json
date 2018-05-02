@@ -36,8 +36,8 @@ cities = [
     "state_name": "Alaska",
     "county_fips": 2020,
     "county_name": "Anchorage",
-    "lat": 61.1508,
-    "lng": -149.1091
+    "lat": 23.9413,
+    "lng": -116.4221
   },
   {
     "city": "Fairbanks",
@@ -46,8 +46,8 @@ cities = [
     "state_name": "Alaska",
     "county_fips": 2090,
     "county_name": "Fairbanks North Star",
-    "lat": 64.8353,
-    "lng": -147.6533
+    "lat": 25.9413,
+    "lng": -116.0221
   },
   {
     "city": "Juneau",
@@ -56,8 +56,8 @@ cities = [
     "state_name": "Alaska",
     "county_fips": 2110,
     "county_name": "Juneau",
-    "lat": 58.4566,
-    "lng": -134.1776
+    "lat": 22.51125,
+    "lng": -112.1012
   },
   {
     "city": "Phoenix",
