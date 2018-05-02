@@ -2,23 +2,23 @@ $(function() {
     // Find the value of the selected industry dropdown
     $("#industiesSelect").change(function() {
         var id= $(this).children(":selected").attr("id");
-        displayProviders(id);
-        statesDropdown();
+        MapHelpers.displayProviders(id);
+        MapHelpers.statesDropdown();
     }); // end industriesSelect
 
     // Find the id of the selected state dropdown
     $("#statesSelect").change(function() {
         var stateId = $(this).children(":selected").attr("id");
-        zoomState(stateId);
-        citiesDropdown(stateId);
+        MapHelpers.zoomState(stateId);
+        MapHelpers.citiesDropdown(stateId);
     });// end statesSelect
 
     // Find the id of the selected state dropdown
     $("#citiesSelect").change(function() {
-        addCity();
+        MapHelpers.addCity();
         var selectBox = document.getElementById("citiesSelect");
         var selectedValue = selectBox.options[selectBox.selectedIndex ].value;
-        zoomCity(selectedValue);
+        MapHelpers.zoomCity(selectedValue);
     }); // end citiesSelect
 });
 
@@ -26,7 +26,7 @@ $(function() {
 var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
 
 AmCharts.ready(function() {
-    industriesDropdown();
+    MapHelpers.industriesDropdown();
     var select = document.getElementById( 'cities' );
     map = new AmCharts.AmMap();
 
@@ -83,122 +83,115 @@ AmCharts.ready(function() {
    };
 }); //end AmCharts.ready
 
-
-// Add Cities to the Map
-function addCity(){
-    for ( var x in cities ) {
-        var city = new AmCharts.MapImage();
-          city.title = '<strong>' + cities[x].city + ', ' + cities[x].state_id + '</strong>';
-          city.latitude = cities[x].lat;
-          city.longitude = cities[x].lng;
-          city.countyFips = cities[x].county_fips;
-          city.svgPath = targetSVG;
-          city.zoomLevel = 9;
-          city.scale = 0.6;
-          city.rollOverScale = 2;
-          city.chart = map;
-          map.dataProvider.images.push( city );
-         city.validate();
-     } // end for loop
-} // end addCity
-
-
-// Populating Industries Dropdown
-function industriesDropdown() {
-    var select = document.getElementById( 'industiesSelect' );
-    for ( var x in providers.categories ) {
-      var category = providers.categories;
-      var option = document.createElement( 'option' );
-      option.value = category[ x ].type_of_work_name;
-      option.id = x;
-      option.text = category[ x ].type_of_work_name;
-      select.appendChild( option );
-  } // end for loop
-} // end industriesDropdown
-
-// Populating the States Dropdown Menu
-function statesDropdown(){
-  var select = document.getElementById( 'statesSelect' );
-  for ( var x in states ) {
-    var option = document.createElement( 'option' );
-    var stateName = states[ x ].state_name;
-    var stateId = states[ x ].state_id;
-    option.id = stateId;
-    option.value = stateId;
-    option.text = stateName;
-    select.appendChild( option );
-  } // end for loop
-} // end stateDropdown
-
-// Populating Dropdown with all Cities
-function citiesDropdown(stateId){
-    var select = document.getElementById( 'citiesSelect' );
-    $('#citiesSelect')
-        .find('option')
-        .remove()
-        .end()
-        .append('<option value=""></option>');
-    for ( var x in cities ) {
-        if(cities[x].state_id == stateId) {
+var MapHelpers = {
+    // Adding City Images to the Map
+    addCity : function(){
+        for ( var x in cities ) {
+            var city = new AmCharts.MapImage();
+              city.title = '<strong>' + cities[x].city + ', ' + cities[x].state_id + '</strong>';
+              city.latitude = cities[x].lat;
+              city.longitude = cities[x].lng;
+              city.countyFips = cities[x].county_fips;
+              city.svgPath = targetSVG;
+              city.zoomLevel = 9;
+              city.scale = 0.6;
+              city.rollOverScale = 2;
+              city.chart = map;
+              map.dataProvider.images.push( city );
+             city.validate();
+         } // end for loop
+    },
+    //  Adding options to the industries dropdown
+    industriesDropdown : function(){
+        var select = document.getElementById( 'industiesSelect' );
+        for ( var x in providers.categories ) {
+          var category = providers.categories;
+          var option = document.createElement( 'option' );
+          option.value = category[ x ].type_of_work_name;
+          option.id = x;
+          option.text = category[ x ].type_of_work_name;
+          select.appendChild( option );
+      } // end for loop
+  },
+  // adding options to the state dropdown
+    statesDropdown : function(){
+        var select = document.getElementById( 'statesSelect' );
+        for ( var x in states ) {
             var option = document.createElement( 'option' );
-            option.value = cities[ x ].county_fips;
-            option.text = cities[ x ].city + ', '+ cities[ x ].state_id ;
+            var stateName = states[ x ].state_name;
+            var stateId = states[ x ].state_id;
+            option.id = stateId;
+            option.value = stateId;
+            option.text = stateName;
             select.appendChild( option );
+        } // end for loop
+    },
+    // adding options to the cities dropdown
+    citiesDropdown : function(stateId){
+        var select = document.getElementById( 'citiesSelect' );
+        $('#citiesSelect')
+          .find('option')
+          .remove()
+          .end()
+          .append('<option value=""></option>');
+        for ( var x in cities ) {
+          if(cities[x].state_id == stateId) {
+              var option = document.createElement( 'option' );
+              option.value = cities[ x ].county_fips;
+              option.text = cities[ x ].city + ', '+ cities[ x ].state_id ;
+              select.appendChild( option );
+          }
+        } // end for loop
+    },
+    // creates areas of all provider totals to add to the map
+    displayProviders : function(id){
+        map.dataProvider.areas = [{
+            "id": "US",
+            "outline": true,
+            "outlineColor": "#707070",
+            "outlineThickness": 1,
+            "outlineAlpha": 0.3
+          }];
+        var indData = providers.categories[id].counties;
+        for(var x in indData){
+            var providerToAdd = new AmCharts.MapArea();
+            var fipsLength = indData[x].county_fips.toString().length;
+            if(fipsLength <= 4) {
+                providerToAdd.id = 'C0' + indData[x].county_fips;
+            }
+            else{
+                providerToAdd.id = 'C' + indData[x].county_fips;
+            }
+            providerToAdd.value = indData[x].providers / 20;
+            providerToAdd.title = '<strong>' + indData[x].county + ' County, '+ indData[x].state + '</strong> </br> <strong>Providers: </strong>' + indData[x].providers;
+            providerToAdd.chart = map.dataProvider;
+            map.dataProvider.areas.push(providerToAdd);
         }
-  } // end for loop
-} // end citiesDropdown
-
-// Display all Providers on the Counties map
-function displayProviders(id){
-    map.dataProvider.areas = [{
-        "id": "US",
-        "outline": true,
-        "outlineColor": "#707070",
-        "outlineThickness": 1,
-        "outlineAlpha": 0.3
-      }];
-    var indData = providers.categories[id].counties;
-    for(var x in indData){
-        var providerToAdd = new AmCharts.MapArea();
-        var fipsLength = indData[x].county_fips.toString().length;
-        if(fipsLength <= 4) {
-            providerToAdd.id = 'C0' + indData[x].county_fips;
+        map.validateData(); // needed to refresh map
+    },
+    // zoom in on state when selected from dropdown
+    zoomState : function(stateId){
+        for(var x in states){
+            if(states[x].state_id == stateId){
+                var stateLat = states[x].lat;
+                var stateLong = states[x].long;
+                map.zoomToLongLat(5, stateLong, stateLat, false);
+                return;
+            }
         }
-        else{
-            providerToAdd.id = 'C' + indData[x].county_fips;
-        }
-        providerToAdd.value = indData[x].providers / 20;
-        providerToAdd.title = '<strong>' + indData[x].county + ' County, '+ indData[x].state + '</strong> </br> <strong>Providers: </strong>' + indData[x].providers;
-        providerToAdd.chart = map.dataProvider;
-        map.dataProvider.areas.push(providerToAdd);
+    },
+    // zoom into city when selected from dropdown
+    zoomCity : function(selectedValue){
+        for (var i = 0; i < map.dataProvider.images.length; i++) {
+            var selectedImg = map.dataProvider.images[i];
+            var countyFips = selectedImg.countyFips;
+            if (countyFips == selectedValue){
+                var selectedImgZoom =  selectedImg.zoomLevel;
+                var selectedImgLat =  selectedImg.latitude;
+                var selectedImgLong =  selectedImg.longitude;
+                map.zoomToLongLat(selectedImgZoom, selectedImgLong, selectedImgLat, false);
+                return;
+            }
+        } //end for loop
     }
-    map.validateData();
-} // end displayProviders
-
-// Zoom into the state selected
-function zoomState(stateId){
-    console.log('in zoomState with', stateId);
-    for(var x in states){
-        if(states[x].state_id == stateId){
-            console.log('state match');
-            var stateLat = states[x].lat;
-            var stateLong = states[x].long;
-            map.zoomToLongLat(5, stateLong, stateLat, false);
-        }
-    }
-} // end zoomState
-
-// Zoom into the city selected
-function zoomCity(selectedValue){
-    for (var i = 0; i < map.dataProvider.images.length; i++) {
-        var selectedImg = map.dataProvider.images[i];
-        var countyFips = selectedImg.countyFips;
-        if (countyFips == selectedValue){
-            var selectedImgZoom =  selectedImg.zoomLevel;
-            var selectedImgLat =  selectedImg.latitude;
-            var selectedImgLong =  selectedImg.longitude;
-            map.zoomToLongLat(selectedImgZoom, selectedImgLong, selectedImgLat, false);
-            return;
-        }
-    } //end for loop
-} // end zoomCity
+}; //end MapHelpers
