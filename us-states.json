@@ -1,7 +1,10 @@
 states = [
   {
     "state_id": "AL",
-    "state_name": "Alabama"
+    "state_name": "Alabama",
+    "lat": "32.806671",
+    "long": "-86.791130"
+
   },
   {
     "state_id": "AK",

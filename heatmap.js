@@ -8,32 +8,18 @@ $(function() {
 
     // Find the id of the selected state dropdown
     $("#statesSelect").change(function() {
-        var id = $(this).children(":selected").attr("id");
-        cityDropdown(id);
+        var stateId = $(this).children(":selected").attr("id");
+        zoomState(stateId);
+        citiesDropdown(stateId);
     });// end statesSelect
 
     // Find the id of the selected state dropdown
     $("#citiesSelect").change(function() {
-        addCity ();
+        addCity();
         var selectBox = document.getElementById("citiesSelect");
         var selectedValue = selectBox.options[selectBox.selectedIndex ].value;
-            // Match selected city with matching img by countyFips value
-            function selectedImage(selectedValue){
-                for (var i = 0; i < map.dataProvider.images.length; i++) {
-                    var selectedImg = map.dataProvider.images[i];
-                    var countyFips = selectedImg.countyFips;
-                    if (countyFips == selectedValue){
-                        var selectedImgZoom =  selectedImg.zoomLevel;
-                        var selectedImgLat =  selectedImg.latitude;
-                        var selectedImgLong =  selectedImg.longitude;
-                        map.zoomToLongLat(selectedImgZoom, selectedImgLong, selectedImgLat, false);
-                        return;
-                    }
-                } //
-            } // end selectedImage
-            selectedImage(selectedValue);
+        zoomCity(selectedValue);
     }); // end citiesSelect
-
 });
 
 // svg path for target icon
@@ -86,7 +72,6 @@ AmCharts.ready(function() {
         right : 10,
         minValue : '1',
         maxValue : '250+',
-
     };
 
     map.dataProvider = dataProvider;
@@ -96,12 +81,11 @@ AmCharts.ready(function() {
        "zoomLongitude": map.zoomLongitude(),
        "zoomLatitude": map.zoomLatitude()
    };
-
 }); //end AmCharts.ready
 
 
 // Add Cities to the Map
-function addCity (){
+function addCity(){
     for ( var x in cities ) {
         var city = new AmCharts.MapImage();
           city.title = '<strong>' + cities[x].city + ', ' + cities[x].state_id + '</strong>';
@@ -110,7 +94,7 @@ function addCity (){
           city.countyFips = cities[x].county_fips;
           city.svgPath = targetSVG;
           city.zoomLevel = 9;
-          city.scale = .6;
+          city.scale = 0.6;
           city.rollOverScale = 2;
           city.chart = map;
           map.dataProvider.images.push( city );
@@ -147,13 +131,13 @@ function statesDropdown(){
 } // end stateDropdown
 
 // Populating Dropdown with all Cities
-function cityDropdown (stateId){
+function citiesDropdown(stateId){
     var select = document.getElementById( 'citiesSelect' );
     $('#citiesSelect')
         .find('option')
         .remove()
         .end()
-        .append('<option value=""></option>')
+        .append('<option value=""></option>');
     for ( var x in cities ) {
         if(cities[x].state_id == stateId) {
             var option = document.createElement( 'option' );
@@ -162,7 +146,7 @@ function cityDropdown (stateId){
             select.appendChild( option );
         }
   } // end for loop
-} // end cityDropdown
+} // end citiesDropdown
 
 // Display all Providers on the Counties map
 function displayProviders(id){
@@ -189,5 +173,32 @@ function displayProviders(id){
         map.dataProvider.areas.push(providerToAdd);
     }
     map.validateData();
-
 } // end displayProviders
+
+// Zoom into the state selected
+function zoomState(stateId){
+    console.log('in zoomState with', stateId);
+    for(var x in states){
+        if(states[x].state_id == stateId){
+            console.log('state match');
+            var stateLat = states[x].lat;
+            var stateLong = states[x].long;
+            map.zoomToLongLat(5, stateLong, stateLat, false);
+        }
+    }
+} // end zoomState
+
+// Zoom into the city selected
+function zoomCity(selectedValue){
+    for (var i = 0; i < map.dataProvider.images.length; i++) {
+        var selectedImg = map.dataProvider.images[i];
+        var countyFips = selectedImg.countyFips;
+        if (countyFips == selectedValue){
+            var selectedImgZoom =  selectedImg.zoomLevel;
+            var selectedImgLat =  selectedImg.latitude;
+            var selectedImgLong =  selectedImg.longitude;
+            map.zoomToLongLat(selectedImgZoom, selectedImgLong, selectedImgLat, false);
+            return;
+        }
+    } //end for loop
+} // end zoomCity
